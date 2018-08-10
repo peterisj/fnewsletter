@@ -88,14 +88,43 @@ body {
       padding: 0;
       max-width: 71.25rem; } }
 
-/* line 17, scss/shame.scss */
+/* line 16, scss/shame.scss */
+.button {
+  margin: 0;
+  padding: 0 16px;
+  padding: 0 1rem;
+  width: 100%;
+  height: 62px;
+  height: 3.875rem;
+  border: none;
+  border-radius: 0;
+  display: inline-block;
+  background-color: #993333;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 62px;
+  line-height: 3.875rem;
+  text-align: center;
+  -webkit-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  -webkit-appearance: none;
+  -webkit-text-fill-color: #FFFFFF; }
+  /* line 35, scss/shame.scss */
+  .button:hover, .button:active {
+    background-color: #B81C32; }
+
+/* line 42, scss/shame.scss */
 .custom-mc .content__gdprLegal {
   position: relative;
   margin-top: 16px;
   margin-top: 1rem;
   padding-left: 40px;
   padding-left: 2.5rem; }
-  /* line 22, scss/shame.scss */
+  /* line 47, scss/shame.scss */
   .custom-mc .content__gdprLegal:before {
     position: absolute;
     left: 0;
@@ -111,7 +140,7 @@ body {
     background-size: contain;
     content: ''; }
 
-/* line 37, scss/shame.scss */
+/* line 62, scss/shame.scss */
 .custom-mc .response {
   z-index: 1;
   margin: 0 0 1em 0;
@@ -120,31 +149,39 @@ body {
   color: #fff;
   line-height: 24px;
   line-height: 1.5rem; }
-  /* line 44, scss/shame.scss */
+  /* line 69, scss/shame.scss */
   .custom-mc .response--error {
-    background-color: #940000; }
-  /* line 48, scss/shame.scss */
+    background-color: #993333; }
+  /* line 73, scss/shame.scss */
   .custom-mc .response--success {
-    background-color: #09AB00; }
+    position: absolute;
+    background-color: #09AB00;
+    opacity: 0; }
 
-/* line 53, scss/shame.scss */
+/* line 80, scss/shame.scss */
+.custom-mc #custom-mc .checkbox + .mce_inline_error,
+.custom-mc #mce-responses + .mce_inline_error {
+  font-weight: 400;
+  background-color: #993333; }
+
+/* line 86, scss/shame.scss */
 .custom-mc .mc-fields-box {
   display: block; }
-  /* line 56, scss/shame.scss */
+  /* line 89, scss/shame.scss */
   .custom-mc .mc-fields-box--email {
     text-align: center; }
-    /* line 59, scss/shame.scss */
+    /* line 92, scss/shame.scss */
     .custom-mc .mc-fields-box--email .mc-field-group {
       max-width: 400px;
       max-width: 25rem;
       display: inline-block; }
-  /* line 65, scss/shame.scss */
+  /* line 98, scss/shame.scss */
   .custom-mc .mc-fields-box--subscribe {
     margin-top: 24px;
     margin-top: 1.5rem;
     text-align: center; }
 
-/* line 72, scss/shame.scss */
+/* line 105, scss/shame.scss */
 .custom-mc #custom-mc .email {
   padding: 0 40px;
   padding: 0 2.5rem;
@@ -160,61 +197,32 @@ body {
   line-height: 3.75rem;
   text-indent: 0; }
 
-/* line 84, scss/shame.scss */
-.custom-mc #custom-mc .button {
-  margin: 0;
-  padding: 0 16px;
-  padding: 0 1rem;
-  width: 100%;
-  height: 62px;
-  height: 3.875rem;
-  border: none;
-  border-radius: 0;
-  display: inline-block;
-  background-color: #B81C32;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 62px;
-  line-height: 3.875rem;
-  text-align: center;
-  -webkit-transition: background-color 0.2s ease-out;
-  -o-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-  -webkit-appearance: none;
-  -webkit-text-fill-color: #FFFFFF; }
-  /* line 103, scss/shame.scss */
-  .custom-mc #custom-mc .button:hover, .custom-mc #custom-mc .button:active {
-    background-color: #70000F; }
-
-/* line 109, scss/shame.scss */
+/* line 117, scss/shame.scss */
 .custom-mc #custom-mc .mc-field-group {
   position: relative;
   padding-bottom: 0;
   width: 100%; }
-  /* line 114, scss/shame.scss */
+  /* line 122, scss/shame.scss */
   .custom-mc #custom-mc .mc-field-group.subscribe__form-gdpr {
     padding-bottom: 16px;
     padding-bottom: 1rem; }
-  /* line 118, scss/shame.scss */
+  /* line 126, scss/shame.scss */
   .custom-mc #custom-mc .mc-field-group label {
     margin-bottom: 0; }
 
 @media (min-width: 768px) {
-  /* line 126, scss/shame.scss */
+  /* line 134, scss/shame.scss */
   .custom-mc #custom-mc .mc-field-group {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-  /* line 130, scss/shame.scss */
+  /* line 138, scss/shame.scss */
   .custom-mc #custom-mc .button {
     width: 16.375rem; } }
 
 @media (min-width: 1200px) {
-  /* line 138, scss/shame.scss */
+  /* line 146, scss/shame.scss */
   .custom-mc #custom-mc .email,
   .custom-mc #custom-mc .button {
     font-size: 1.125rem; } }
@@ -241,7 +249,7 @@ body {
   .article p.article__subtext {
     padding-bottom: 30px;
     padding-bottom: 1.875rem;
-    color: #B81C32;
+    color: #993333;
     font-size: 18px;
     font-size: 1.125rem;
     font-weight: 700;
@@ -290,29 +298,38 @@ body {
         height: 5px;
         height: 0.3125rem;
         border-radius: 50%;
-        background-color: #B81C32;
+        background-color: #993333;
         content: ""; }
     /* line 71, _src/_includes/partials/article.scss */
     .article__list + li {
       margin-top: 16px;
       margin-top: 1rem; }
+  /* line 76, _src/_includes/partials/article.scss */
+  .article__btn {
+    margin-top: 32px;
+    margin-top: 2rem; }
+    /* line 79, _src/_includes/partials/article.scss */
+    .article__btn .button {
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-weight: 400; }
   @media (min-width: 768px) {
-    /* line 77, _src/_includes/partials/article.scss */
+    /* line 86, _src/_includes/partials/article.scss */
     .article p.article__subtext {
       padding-bottom: 1.25rem; }
-    /* line 81, _src/_includes/partials/article.scss */
+    /* line 90, _src/_includes/partials/article.scss */
     .article__wrap {
       padding: 3.125rem 0 3.5rem; }
-    /* line 85, _src/_includes/partials/article.scss */
+    /* line 94, _src/_includes/partials/article.scss */
     .article__image {
       width: 10rem; }
-    /* line 89, _src/_includes/partials/article.scss */
+    /* line 98, _src/_includes/partials/article.scss */
     .article__info {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-    /* line 93, _src/_includes/partials/article.scss */
+    /* line 102, _src/_includes/partials/article.scss */
     .article__details {
       margin-top: 0;
       margin-left: 1.5rem;
@@ -324,18 +341,18 @@ body {
     /* line 1, _src/_includes/partials/article.scss */
     .article {
       background-color: #FFFFFF; }
-      /* line 103, _src/_includes/partials/article.scss */
+      /* line 112, _src/_includes/partials/article.scss */
       .article p,
       .article li {
         font-size: 1rem; }
-      /* line 108, _src/_includes/partials/article.scss */
+      /* line 117, _src/_includes/partials/article.scss */
       .article p.article__subtext {
         font-size: 1.5rem;
         line-height: 2rem; }
-      /* line 113, _src/_includes/partials/article.scss */
+      /* line 122, _src/_includes/partials/article.scss */
       .article__wrap {
         padding: 3.75rem 6.125rem 3rem; }
-      /* line 117, _src/_includes/partials/article.scss */
+      /* line 126, _src/_includes/partials/article.scss */
       .article .wrapper {
         background-color: #EDEDED; } }
 
@@ -389,7 +406,7 @@ body {
     width: 6.875rem; }
   /* line 38, _src/_includes/partials/hero.scss */
   .hero__title {
-    max-width: 33.75rem;
+    max-width: 36.25rem;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
@@ -436,6 +453,48 @@ body {
     font-size: 1rem;
     font-weight: 700;
     line-height: 150%; }
+  /* line 28, _src/_includes/partials/subscribe.scss */
+  .subscribe__form-accept input[type=checkbox] {
+    visibility: hidden; }
+    /* line 32, _src/_includes/partials/subscribe.scss */
+    .subscribe__form-accept input[type=checkbox] + label:before, .subscribe__form-accept input[type=checkbox] + label:after {
+      position: absolute;
+      content: "";
+      display: inline-block; }
+    /* line 39, _src/_includes/partials/subscribe.scss */
+    .subscribe__form-accept input[type=checkbox] + label:before {
+      top: 0;
+      left: 0;
+      border: 1px solid #9B9B9B;
+      border: 0.0625rem solid #9B9B9B;
+      width: 25px;
+      width: 1.5625rem;
+      height: 25px;
+      height: 1.5625rem;
+      color: transparent;
+      background-color: transparent;
+      cursor: pointer; }
+    /* line 50, _src/_includes/partials/subscribe.scss */
+    .subscribe__form-accept input[type=checkbox] + label:after {
+      top: 6px;
+      top: 0.375rem;
+      left: 6px;
+      left: 0.375rem;
+      width: 15px;
+      width: 0.9375rem;
+      height: 15px;
+      height: 0.9375rem;
+      background-image: url("../assets/img/tick.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0;
+      -webkit-transition: opacity 0.2s ease-out;
+      -o-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out; }
+    /* line 64, _src/_includes/partials/subscribe.scss */
+    .subscribe__form-accept input[type=checkbox]:checked + label:after {
+      opacity: 1; }
   /* line 69, _src/_includes/partials/subscribe.scss */
   .subscribe__form-accept p,
   .subscribe__form-accept label {
@@ -449,26 +508,30 @@ body {
     line-height: 1rem; }
   /* line 79, _src/_includes/partials/subscribe.scss */
   .subscribe__form-accept .checkbox {
-    padding-left: 24px;
-    padding-left: 1.5rem; }
+    padding-left: 36px;
+    padding-left: 2.25rem;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 25px;
+    line-height: 1.5625rem; }
 
-/* line 84, _src/_includes/partials/subscribe.scss */
+/* line 86, _src/_includes/partials/subscribe.scss */
 .subscribe__form-description {
   margin-top: 6px;
   margin-top: 0.375rem; }
 
 @media (min-width: 768px) {
-  /* line 89, _src/_includes/partials/subscribe.scss */
+  /* line 91, _src/_includes/partials/subscribe.scss */
   .subscribe__form {
     padding: 3.75rem 3.875rem 3.5rem; }
-  /* line 93, _src/_includes/partials/subscribe.scss */
+  /* line 95, _src/_includes/partials/subscribe.scss */
   .subscribe__form-accept {
     margin-top: 2.5rem; }
-    /* line 96, _src/_includes/partials/subscribe.scss */
+    /* line 98, _src/_includes/partials/subscribe.scss */
     .subscribe__form-accept label {
       padding-left: 2.5rem; } }
 
 @media (min-width: 1200px) {
-  /* line 103, _src/_includes/partials/subscribe.scss */
+  /* line 105, _src/_includes/partials/subscribe.scss */
   .subscribe__form {
     padding: 4.375rem 12.25rem 7.25rem; } }
