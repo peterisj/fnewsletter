@@ -1,0 +1,472 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+/* line 6, scss/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, scss/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 19, scss/reset.scss */
+body {
+  line-height: 1; }
+
+/* line 22, scss/reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 25, scss/reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 29, scss/reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 34, scss/reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 38, scss/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*-------------------------------------
+	Theme colors
+-------------------------------------*/
+/* line 1, scss/base.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 4, scss/base.scss */
+a {
+  text-decoration: none; }
+
+/* line 7, scss/base.scss */
+img {
+  max-width: 100%; }
+
+/* line 10, scss/base.scss */
+body {
+  font-family: 'Verdana', sans-serif; }
+
+/* All global variables */
+/* -------------- Examples -------------- */
+@media (min-width: 768px) {
+  /* styles for tablet viewport (min-width: 768px)*/ }
+
+@media (min-width: 1200px) {
+  /* styles for laptop viewport (min-width: 1024px)*/ }
+
+/* change gutter width depends to design*/
+/*shame*/
+/* line 2, scss/shame.scss */
+.wrapper {
+  padding: 0 20px;
+  padding: 0 1.25rem; }
+  @media (min-width: 768px) {
+    /* line 2, scss/shame.scss */
+    .wrapper {
+      padding: 0 3.125rem; } }
+  @media (min-width: 1200px) {
+    /* line 2, scss/shame.scss */
+    .wrapper {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 71.25rem; } }
+
+/* line 17, scss/shame.scss */
+.custom-mc .response {
+  z-index: 1;
+  margin: 0 0 1em 0;
+  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
+  color: #fff;
+  line-height: 24px;
+  line-height: 1.5rem; }
+  /* line 24, scss/shame.scss */
+  .custom-mc .response--error {
+    background-color: #940000; }
+  /* line 28, scss/shame.scss */
+  .custom-mc .response--success {
+    background-color: #09AB00; }
+
+/* line 33, scss/shame.scss */
+.custom-mc .mce_inline_error {
+  margin-top: 16px;
+  margin-top: 1rem; }
+
+/* line 38, scss/shame.scss */
+.custom-mc #custom-mc .email {
+  padding: 0 40px;
+  padding: 0 2.5rem;
+  width: 100%;
+  border: 1px solid #9B9B9B;
+  border: 0.0625rem solid #9B9B9B;
+  border-radius: 0;
+  color: #9B9B9B;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 60px;
+  line-height: 3.75rem;
+  text-indent: 0; }
+
+/* line 50, scss/shame.scss */
+.custom-mc #custom-mc .button {
+  margin: 40px 0 0 0;
+  margin: 2.5rem 0 0 0;
+  padding: 0 16px;
+  padding: 0 1rem;
+  width: 100%;
+  height: initial;
+  border: none;
+  border-radius: 0;
+  background-color: #B81C32;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 62px;
+  line-height: 3.875rem;
+  text-align: center;
+  -webkit-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out; }
+  /* line 66, scss/shame.scss */
+  .custom-mc #custom-mc .button:hover, .custom-mc #custom-mc .button:active {
+    background-color: #70000F; }
+
+/* line 72, scss/shame.scss */
+.custom-mc #custom-mc .mc-field-group {
+  position: relative;
+  padding-bottom: 0;
+  width: 100%; }
+  /* line 77, scss/shame.scss */
+  .custom-mc #custom-mc .mc-field-group label {
+    margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  /* line 84, scss/shame.scss */
+  .custom-mc .mc-fields-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  /* line 89, scss/shame.scss */
+  .custom-mc #custom-mc .mc-field-group {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  /* line 93, scss/shame.scss */
+  .custom-mc #custom-mc .button {
+    margin-top: 0;
+    margin-left: 1rem;
+    width: 16.375rem; } }
+
+@media (min-width: 1200px) {
+  /* line 103, scss/shame.scss */
+  .custom-mc #custom-mc .email,
+  .custom-mc #custom-mc .button {
+    font-size: 1.125rem; }
+  /* line 108, scss/shame.scss */
+  .custom-mc #custom-mc .button {
+    margin-left: 2rem; } }
+
+/* line 1, _src/_includes/partials/article.scss */
+.article {
+  background-color: #EDEDED; }
+  /* line 4, _src/_includes/partials/article.scss */
+  .article p,
+  .article li {
+    color: #000000;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 20px;
+    line-height: 1.25rem;
+    text-align: left; }
+  /* line 14, _src/_includes/partials/article.scss */
+  .article p.article__name {
+    margin-top: 24px;
+    margin-top: 1.5rem;
+    font-weight: 700; }
+  /* line 19, _src/_includes/partials/article.scss */
+  .article p.article__subtext {
+    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
+    color: #B81C32;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 24px;
+    line-height: 1.5rem; }
+  /* line 28, _src/_includes/partials/article.scss */
+  .article__content p + p {
+    margin-top: 16px;
+    margin-top: 1rem; }
+  /* line 32, _src/_includes/partials/article.scss */
+  .article__wrap {
+    padding: 24px 0 56px;
+    padding: 1.5rem 0 3.5rem; }
+  /* line 36, _src/_includes/partials/article.scss */
+  .article__image {
+    width: 80px;
+    width: 5rem; }
+    /* line 39, _src/_includes/partials/article.scss */
+    .article__image img {
+      width: 100%; }
+  /* line 44, _src/_includes/partials/article.scss */
+  .article__details {
+    margin-top: 32px;
+    margin-top: 2rem; }
+  /* line 48, _src/_includes/partials/article.scss */
+  .article__subscribe {
+    margin-top: 48px;
+    margin-top: 3rem; }
+  /* line 52, _src/_includes/partials/article.scss */
+  .article__list {
+    list-style: none; }
+    /* line 55, _src/_includes/partials/article.scss */
+    .article__list li {
+      position: relative;
+      padding-left: 36px;
+      padding-left: 2.25rem; }
+    /* line 60, _src/_includes/partials/article.scss */
+    .article__list:before {
+      position: absolute;
+      top: 8px;
+      top: 0.5rem;
+      left: 14px;
+      left: 0.875rem;
+      width: 5px;
+      width: 0.3125rem;
+      height: 5px;
+      height: 0.3125rem;
+      border-radius: 50%;
+      background-color: #B81C32;
+      content: ""; }
+    /* line 71, _src/_includes/partials/article.scss */
+    .article__list + li {
+      margin-top: 16px;
+      margin-top: 1rem; }
+  @media (min-width: 768px) {
+    /* line 77, _src/_includes/partials/article.scss */
+    .article p.article__subtext {
+      padding-bottom: 1.25rem; }
+    /* line 81, _src/_includes/partials/article.scss */
+    .article__wrap {
+      padding: 3.125rem 0 3.5rem; }
+    /* line 85, _src/_includes/partials/article.scss */
+    .article__image {
+      width: 10rem; }
+    /* line 89, _src/_includes/partials/article.scss */
+    .article__info {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    /* line 93, _src/_includes/partials/article.scss */
+    .article__details {
+      margin-top: 0;
+      margin-left: 1.5rem;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; } }
+  @media (min-width: 1200px) {
+    /* line 1, _src/_includes/partials/article.scss */
+    .article {
+      background-color: #FFFFFF; }
+      /* line 103, _src/_includes/partials/article.scss */
+      .article p,
+      .article li {
+        font-size: 1rem; }
+      /* line 108, _src/_includes/partials/article.scss */
+      .article p.article__subtext {
+        font-size: 1.5rem;
+        line-height: 2rem; }
+      /* line 113, _src/_includes/partials/article.scss */
+      .article__wrap {
+        padding: 3.75rem 6.125rem 3rem; }
+      /* line 117, _src/_includes/partials/article.scss */
+      .article .wrapper {
+        background-color: #EDEDED; } }
+
+/* line 2, _src/_includes/partials/hero.scss */
+.hero__content {
+  padding-bottom: 48px;
+  padding-bottom: 3rem; }
+
+/* line 6, _src/_includes/partials/hero.scss */
+.hero__logo {
+  margin: 0 auto;
+  width: 80px;
+  width: 5rem;
+  display: block; }
+
+/* line 12, _src/_includes/partials/hero.scss */
+.hero__logo img {
+  width: 100%; }
+
+/* line 16, _src/_includes/partials/hero.scss */
+.hero__title {
+  color: #000000;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 32px;
+  line-height: 2rem;
+  max-width: 280px;
+  max-width: 17.5rem;
+  text-align: left; }
+
+@media (min-width: 768px) {
+  /* line 26, _src/_includes/partials/hero.scss */
+  .hero__content {
+    padding-bottom: 3.75rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  /* line 33, _src/_includes/partials/hero.scss */
+  .hero__logo {
+    margin: 0;
+    width: 6.875rem; }
+  /* line 38, _src/_includes/partials/hero.scss */
+  .hero__title {
+    max-width: 33.75rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: right; } }
+
+@media (min-width: 1200px) {
+  /* line 46, _src/_includes/partials/hero.scss */
+  .hero__content {
+    padding-bottom: 5.25rem; }
+  /* line 50, _src/_includes/partials/hero.scss */
+  .hero__logo {
+    width: 10.3125rem; }
+  /* line 54, _src/_includes/partials/hero.scss */
+  .hero__title {
+    font-size: 2rem;
+    line-height: 2.375rem; } }
+
+/* line 2, _src/_includes/partials/subscribe.scss */
+.subscribe__form {
+  padding: 45px 0 56px;
+  padding: 2.8125rem 0 3.5rem; }
+
+/* line 6, _src/_includes/partials/subscribe.scss */
+.subscribe__form-gdpr input {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 12, _src/_includes/partials/subscribe.scss */
+.subscribe__form-accept {
+  margin-top: 32px;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  /* line 17, _src/_includes/partials/subscribe.scss */
+  .subscribe__form-accept input[type=checkbox] {
+    visibility: hidden; }
+    /* line 21, _src/_includes/partials/subscribe.scss */
+    .subscribe__form-accept input[type=checkbox] + label:before, .subscribe__form-accept input[type=checkbox] + label:after {
+      position: absolute;
+      content: "";
+      display: inline-block; }
+    /* line 28, _src/_includes/partials/subscribe.scss */
+    .subscribe__form-accept input[type=checkbox] + label:before {
+      top: 0;
+      left: 0;
+      border: 1px solid #9B9B9B;
+      border: 0.0625rem solid #9B9B9B;
+      width: 25px;
+      width: 1.5625rem;
+      height: 25px;
+      height: 1.5625rem;
+      color: transparent;
+      background-color: transparent;
+      cursor: pointer; }
+    /* line 39, _src/_includes/partials/subscribe.scss */
+    .subscribe__form-accept input[type=checkbox] + label:after {
+      top: 6px;
+      top: 0.375rem;
+      left: 6px;
+      left: 0.375rem;
+      width: 15px;
+      width: 0.9375rem;
+      height: 15px;
+      height: 0.9375rem;
+      background-image: url("../assets/img/tick.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0;
+      -webkit-transition: opacity 0.2s ease-out;
+      -o-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out; }
+    /* line 53, _src/_includes/partials/subscribe.scss */
+    .subscribe__form-accept input[type=checkbox]:checked + label:after {
+      opacity: 1; }
+  /* line 58, _src/_includes/partials/subscribe.scss */
+  .subscribe__form-accept label {
+    position: relative;
+    padding-left: 24px;
+    padding-left: 1.5rem;
+    display: block;
+    color: #000000;
+    font-size: 11px;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    line-height: 16px;
+    line-height: 1rem; }
+
+@media (min-width: 768px) {
+  /* line 70, _src/_includes/partials/subscribe.scss */
+  .subscribe__form {
+    padding: 3.75rem 3.875rem 3.5rem; }
+  /* line 74, _src/_includes/partials/subscribe.scss */
+  .subscribe__form-accept {
+    margin-top: 2.5rem; }
+    /* line 77, _src/_includes/partials/subscribe.scss */
+    .subscribe__form-accept label {
+      padding-left: 2.5rem; } }
+
+@media (min-width: 1200px) {
+  /* line 84, _src/_includes/partials/subscribe.scss */
+  .subscribe__form {
+    padding: 4.375rem 12.25rem 7.25rem; } }
