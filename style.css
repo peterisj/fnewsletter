@@ -166,7 +166,8 @@ body {
   padding: 0 16px;
   padding: 0 1rem;
   width: 100%;
-  height: initial;
+  height: 62px;
+  height: 3.875rem;
   border: none;
   border-radius: 0;
   display: inline-block;
@@ -181,37 +182,39 @@ body {
   text-align: center;
   -webkit-transition: background-color 0.2s ease-out;
   -o-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out; }
-  /* line 101, scss/shame.scss */
+  transition: background-color 0.2s ease-out;
+  -webkit-appearance: none;
+  -webkit-text-fill-color: #FFFFFF; }
+  /* line 103, scss/shame.scss */
   .custom-mc #custom-mc .button:hover, .custom-mc #custom-mc .button:active {
     background-color: #70000F; }
 
-/* line 107, scss/shame.scss */
+/* line 109, scss/shame.scss */
 .custom-mc #custom-mc .mc-field-group {
   position: relative;
   padding-bottom: 0;
   width: 100%; }
-  /* line 112, scss/shame.scss */
+  /* line 114, scss/shame.scss */
   .custom-mc #custom-mc .mc-field-group.subscribe__form-gdpr {
     padding-bottom: 16px;
     padding-bottom: 1rem; }
-  /* line 116, scss/shame.scss */
+  /* line 118, scss/shame.scss */
   .custom-mc #custom-mc .mc-field-group label {
     margin-bottom: 0; }
 
 @media (min-width: 768px) {
-  /* line 124, scss/shame.scss */
+  /* line 126, scss/shame.scss */
   .custom-mc #custom-mc .mc-field-group {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-  /* line 128, scss/shame.scss */
+  /* line 130, scss/shame.scss */
   .custom-mc #custom-mc .button {
     width: 16.375rem; } }
 
 @media (min-width: 1200px) {
-  /* line 136, scss/shame.scss */
+  /* line 138, scss/shame.scss */
   .custom-mc #custom-mc .email,
   .custom-mc #custom-mc .button {
     font-size: 1.125rem; } }
